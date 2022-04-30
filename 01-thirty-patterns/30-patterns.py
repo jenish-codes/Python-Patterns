@@ -129,7 +129,7 @@ for i in range(1,n+1):
 
 
 
-#Pyramid Pattern
+# 8 Pyramid Pattern
 print('\n Pyramid Pattern \n')
 
 n=5
@@ -149,9 +149,23 @@ for i in range(n):
 
 
 
-#hollow pyramid
+# 9 hollow pyramid
 print('\n Hollow Pyramid \n')
 
+n=5
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ',end='')
+    for k in range(2*i+1):
+        #print star at start and end
+        if k==0 or k==2*i:
+            print('*',end='')
+        else:
+            if i== n-1:
+                print('*',end ='')
+            else:
+                print(' ',end='')
+    print()
 
 
 
@@ -161,12 +175,37 @@ print('\n Hollow Pyramid \n')
 
 
 
+# 10 Reverse Pyramid
+print('\n Reverse Pyramid \n')
+
+for i in range(n):
+    for j in range(i):
+        print(' ',end='')
+    for k in range(2*(n-i)-1):
+        print('*',end='')
+    print()
 
 
 
 
+#11 Dimond star pattern
+
+print('\n Dimond \n')
 
 
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ',end='')
+    for k in range(2*i+1):
+        print('*',end='')
+    print()
+
+for i in range(n-1):
+    for j in range(i+1):
+        print(' ',end='')
+    for j in range(2*(n-i-1)-1):
+        print('*',end='')
+    print()
 
 
 
