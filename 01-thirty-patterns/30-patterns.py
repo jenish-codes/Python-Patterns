@@ -1,4 +1,4 @@
-
+'''
 #1 square pattern
 print("Square Pattern")
 for i in range(0,5):       #creating list of rows
@@ -186,10 +186,11 @@ for i in range(n):
     print()
 
 
+'''
 
 
 #11 Dimond star pattern
-
+n=5
 print('\n Dimond \n')
 
 
@@ -206,6 +207,72 @@ for i in range(n-1):
     for j in range(2*(n-i-1)-1):
         print('*',end='')
     print()
+
+
+# 12 Hollow dimond
+print('\n Hollow Dimond \n')
+
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ',end ='')
+    for j in range(2*i+1):
+        if j ==0 or j==2*i:
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+    
+for i in range(n-1):
+    for j in range(i+1):
+        print(' ',end='')
+    for j in range(2*(n-i-1)-1):
+        if j==0 or j==2*(n-i-1)-2:
+            print('*',end='')
+        else:
+            print(' ',end='')
+    print()
+
+
+
+
+# 13 Hourglass
+
+print(' \n Hourglass star pattern \n')
+
+
+for i in range(n-1):
+    for j in range(i):
+        print(' ',end='')
+    for k in range(2*(n-i)-1):
+        print('*',end='')
+    print()
+
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ',end='')
+    for k in range(2*i+1):
+        print('*',end='')
+    print()
+
+
+
+# 14 Right Pascal Star pattern
+
+print('')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
